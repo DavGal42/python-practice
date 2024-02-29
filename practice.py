@@ -143,16 +143,68 @@ print(return_letter('hello my beautiful world'))
 
 # 12. Գրել ֆունկցիա որը կվերադարձնի նախադասության ամենաերկար բառում ամենաշատ օգտագործված տառը։
 
+def max_letter(string):
+    ml = string.split()
+    max_word = ''
+    for el in ml:
+        if len(el) > len(max_word):
+            max_word = el
+    md = {}
+    for el in max_word:
+        if el in md:
+            md[el] += 1
+        else:
+            md[el] = 1
+    print(md)
+    count = 0
+    max_letter = ''
+    for k, v in md.items():
+        if v > count:
+            count = v
+            max_letter = k
+    return max_letter
 
+
+mstr = input('Enter a sentence: ')
+print(max_letter(mstr))
 
 # 13. Գրել ֆունկցիա որը որպես արգումենտ կստանա տող և թիվ։ 
 # Կվերադարձնի այդ թվին համապատասխն ինդեքսում եղած էլէմենտները՝ սկզբից և վերջից։
 
+num = int(input('Enter a number: '))
+mstr = input('Enter a sentence: ')
 
+def index_of_el(str,index):
+    if not str:
+        return 'String is empty'
+    if index == 0:
+        return str[0]
+    if index > len(str):
+        return 'Index out of range'
+    else:
+        return str[index],str[-index]
+
+
+print(index_of_el(mstr, num))
 
 # 14. Գրել ֆունկցիա որը որպես արգումենտ կստանա թիվ և կստուգի պոլինդրոմ է այն թե ոչ։
 
+def is_polindrome(num):
+    if 0 <= num <= 9:
+        return 'the number is a single digit'
+    if num < 0:
+        return 'The number is negative'
+    tmp = str(num)
+    flag = True
+    for i in range(1, (len(tmp) // 2) + 1):
+        if tmp[i - 1] != tmp[-i]:
+            flag = False
+    if flag:
+        return 'The number is polindrome'
+    elif not flag:
+        return 'The number is not polindrome'
 
+print(is_polindrome(422))
 
 # 15. Գրել ֆունկցիա որը որպես արգումենտ կստանա թիվ և կվերադարձնի իրեն ամենամոտ պոլինդրոմ թիվը։
 
