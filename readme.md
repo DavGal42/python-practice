@@ -1,1 +1,1 @@
-# There is python exercices
+# There are python exercices
