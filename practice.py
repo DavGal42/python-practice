@@ -190,10 +190,8 @@ print(index_of_el(mstr, num))
 # 14. Գրել ֆունկցիա որը որպես արգումենտ կստանա թիվ և կստուգի պոլինդրոմ է այն թե ոչ։
 
 def is_polindrome(num):
-    if 0 <= num <= 9:
-        return 'the number is a single digit'
-    if num < 0:
-        return 'The number is negative'
+    if -9 <= num <= 9:
+        return 'The number is a single digit'
     tmp = str(num)
     flag = True
     for i in range(1, (len(tmp) // 2) + 1):
@@ -212,7 +210,14 @@ print(is_polindrome(422))
 
 # 16. Գրել ֆունկցիա որը որպես արգումենտ կստանա թիվ և կվերադարձնի իր առաջին և վերջին թվանշանների արտադրյալը։
 
+def multiply(num):
+    if -9 <= num <= 9:
+        return num
+    tmp = str(num)
+    return int(tmp[0]) * int(tmp[-1])
 
+
+print(multiply(42))
 
 # 17. Գրել ֆունկցիա որը որպես արգումենտ կստանա լիստ և կվերադարձնի լիստում եղած տողերի քանակությունը։
 
@@ -305,9 +310,28 @@ def sorted_words(words):
 ml = ['hello','my','world','car','beautiful']
 print(sorted_words(ml))
 
-# 24. Գրել ֆունկցիա որը որպես արգումենտ կընդունի տողերի լիստ և կվերադարձնի այն բառը որը կպարունակի ամենաշատ ձայնավորները։
+# 24. Գրել ֆունկցիա որը որպես արգումենտ կընդունի տողերի լիստ 
+# և կվերադարձնի այն բառը որը կպարունակի ամենաշատ ձայնավորները։
+
+def find_word(list):
+    vowels = 'aeiou'
+    md = {}
+    for el in list:
+        count = 0
+        for i in el:
+            if i in vowels:
+                count += 1
+        md[el] = count
+    count = 0
+    max_word = ''
+    for k, v in md.items():
+        if v > count:
+            count = v
+            max_word = k
+    return max_word
 
 
+print(find_word(['hello','good','beautiful','world']))
 
 # 25. Գրել ֆունկցիա որը որպես արգումենտ կընդունի նախադասությունների լիստ 
 # և կվերադարձնի այն նախադասությունը որը կպարունակի ամենաշատ բառերը։
@@ -327,7 +351,15 @@ print(longest_sentence(ml))
 # 26. Գրել ֆունկցիա որը որպես արգումենտ կստանա տող (իրականում նախադասություն) 
 # և կվերադարձնի այդ նախադասությունում առկա ամենամեծ թիվը ոչ թե թվանշանը ։
 
+def max_number(str):
+    ml = []
+    for el in str:
+        if el.isdigit():
+            ml.append(int(el))
+    return max(ml)
 
+
+print(max_number('hello12 good 589 world 43'))
 
 # 27. Գրել ֆունկցիա որը որպես արգումենտ կստանա բառարանների լիստ՝ մարդկանց նկարագրող 
 # և կվերադարձնի այն բառարանը որում մարդու տարիքն ամենամեծն է։
