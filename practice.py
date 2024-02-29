@@ -364,7 +364,17 @@ print(max_number('hello12 good 589 world 43'))
 # 27. Գրել ֆունկցիա որը որպես արգումենտ կստանա բառարանների լիստ՝ մարդկանց նկարագրող 
 # և կվերադարձնի այն բառարանը որում մարդու տարիքն ամենամեծն է։
 
+def oldest_person(people):
+    mmax = 0
+    person = ''
+    for el in people:
+        if el['age'] > mmax:
+            mmax = el['age']
+            person = el['name']
+    return person
 
+
+print(oldest_person([{'name': 'Tom','age': 15},{'name': 'Mary','age': 24},{'name': 'Robert','age': 18}]))
 
 # 28. Գրել ֆունկցիա որը որպես արգումենտ կստանա բառարանների լիստ՝ ուսանողների նկարագրող 
 # և կվերադարձնի այդ ուսանողների լիստը դասավորված աճման կարգով՝ ըստ միավորների։
@@ -373,3 +383,19 @@ print(max_number('hello12 good 589 world 43'))
 
 # 29. Գրել ֆունկցիա որը որպես արգումենտ կստանա բառարանների լիստ՝ համալսարաններին նկարագրող 
 # և կվերադարձնի այն համալսարանը, որի անվանումն ամենաերկարն է։
+
+def max_university(universities):
+    count = 0
+    university = ''
+    for el in universities:
+            if len(el['name']) > count:
+                count = len(el['name'])
+                university = el['name']
+    return university
+
+
+print(max_university([{'name': 'University of Toronto','est': 1850},
+                      {'name': 'University of Oxford','est': 1096},
+                      {'name': 'University of Cambridge','est': 1209},
+                      {'name': 'National Polytechnic University of Armenia','est': 1933}
+                      ]))
