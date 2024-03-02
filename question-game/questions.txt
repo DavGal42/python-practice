@@ -1,0 +1,20 @@
+What is the capital of Armenia? Erevan,Moscow,Rome,Washington
+What is equal to 5!? 120 24 720 25
+What is the capital of France? Paris,London,Berlin,Rome
+How many continents are there in the world? Seven,Four,Nine,Five
+Who painted the Mona Lisa? Leonardo da Vinci,Vincent van Gogh,Pablo Picasso,Michelangelo
+What is the largest planet in our solar system? Jupiter,Venus,Saturn,Mars
+What is the color of an emerald? Green,Blue,Red,Yellow
+What is the capital of Spain? Madrid,Lisbon,Barcelona,Seville
+How many sides does a triangle have? Three,Four,Five,Six
+Who wrote "Romeo and Juliet"? William Shakespeare,Charles Dickens,Jane Austen,Mark Twain
+What is the chemical symbol for water? H2O,He,O2,NaCl
+What is the tallest animal in the world? Giraffe,Elephant,Lion,Rhino
+What do bees collect? Pollen and nectar,Mud,Grass,Honeydew
+What is the name of the closest star to Earth? The Sun,Sirius,Alpha Centauri,Betelgeuse
+How many days are there in a leap year? 366,365,367,368
+What is the capital of Italy? Rome,Paris,Madrid,Athens
+How many planets are there in the solar system? Eight,Five,Ten,Twelve
+Who invented the light bulb? Thomas Edison,Alexander Graham Bell,Nikola Tesla,Albert Einstein
+What is the chemical symbol for gold? Au,Ag,Hg,Fe
+What is the largest ocean on Earth? Pacific Ocean,Atlantic Ocean,Indian Ocean,Arctic Ocean
