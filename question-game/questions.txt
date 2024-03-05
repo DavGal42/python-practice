@@ -1,5 +1,5 @@
 What is the capital of Armenia? Erevan,Moscow,Rome,Washington
-What is equal to 5!? 120 24 720 25
+What is equal to 5!? 120,24,720,25
 What is the capital of France? Paris,London,Berlin,Rome
 How many continents are there in the world? Seven,Four,Nine,Five
 Who painted the Mona Lisa? Leonardo da Vinci,Vincent van Gogh,Pablo Picasso,Michelangelo
