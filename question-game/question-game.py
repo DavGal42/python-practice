@@ -76,7 +76,7 @@ def top_in_dict():
 def sorted_top():
     dict = top_in_dict()
     ml = list(dict.items())
-    ml.sort(key=lambda x: x[1])
+    ml.sort(key=lambda x: x[1], reverse = True)
     return ml
     
 
