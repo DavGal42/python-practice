@@ -87,6 +87,11 @@ def write_into_top(filename):
             f.write(k + ':' + str(v) + '\n')
 
 
-write_into_top('question-game/top.txt')
+def main():
+    write_into_top('question-game/top.txt')
+
+
+if __name__ == '__main__':
+    main()
 
 print(get_content('question-game/top.txt'))
